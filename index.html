@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/6e1e3b6106.js" crossorigin="anonymous"></script>
+    <title>Popular Movies & TV Shows - @showme.com</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@200;400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Top Navbar -->
+    <nav>
+        <h1 class="main-logo"> <a href="#home"><span class="light-font">@</span> SHOWME.COM</a></h1>
+        <ul class="nav_links">
+            <li><a href='tvshows.html'>Movies & TV Shows</a></li>
+            <li id="searchbar"><input type="text" placeholder="Search"></li>
+        </ul>
+        <a href='#signup'><button>Sign Up</button></a>
+    </nav>
+
+
+    <!-- Content - block-level elements are div, h1, p, header,footer, section -->
+    <div class="clearfix-container">
+        <!-- Inline elements are span, anchor and img tag -->
+        <img class=image1 src="Images/YouPoster.png" alt="A poster of YOU season 4" />
+        <h2>Find Your Show</h2>
+        <p>We've compiled all the best TV shows and Movies on top streaming platforms like Netflix, Amazon and Disney+
+            and more so you can stop searching and start watching ASAP.</p>
+        <a href='#signup'><input type="button" value="Start Here" /></a>
+    </div>
+
+    <main>
+        <h3 class="streaming-title">QUICK VIEW STREAMING PLATFORMS</h3>
+        <div class="flexbox">
+            <a class="mini-logos" href="https://www.netflix.com">
+                <img src="Images/netflix-symbol-black.png" alt="Netflix logo" />
+            </a>
+            <a class="mini-logos" href="https://www.amazon.co.uk/Amazon-Video/b?ie=UTF8&node=3010085031">
+                <img src="Images/primevideo-seo-logo.png" alt="PrimeVideo logo" />
+            </a>
+            <a class="mini-logos" href="https://www.disneyplus.com/en-gb/complete-purchase">
+                <img src="Images/disney-plus-logo-1143358.jpg" alt="Disney+ logo" />
+            </a>
+            <a class="mini-logos" href="https://tv.apple.com/">
+                <img src="Images/appletv.png" alt="AppleTV+ logo" />
+            </a>
+        </div>
+        <p class="streaming-text">Enjoy over 1 000 000 movies and shows worldwide!</p>
+
+        <hr>
+
+        <ul class="icon-section">
+            <li><a href='tvshows.html'><i class="fa-solid fa-magnifying-glass fa-border fa-lg"></i>Genres
+                    <p>Pick a TV show or Movie by your favourite genre.</p>
+                </a>
+            </li>
+            <li><a href='tvshows.html'><i class="fa-solid fa-trophy fa-border fa-lg"></i> Top 5 Movies
+                    <p>See the top 10 movies across all platforms.</p>
+                </a>
+            </li>
+            <li><a href='tvshows.html'><i class="fa-solid fa-medal fa-border fa-lg"></i> Top 5 Shows
+                    <p>See the top 10 TV shows across all platforms.</p>
+                </a>
+            </li>
+        </ul>
+
+        <hr>
+
+        <form onsubmit="sendEmail()" action="/sign up" method="POST" </form>
+            <div class="form-header">
+                <h4 class="subscribe-title">Subscribe to our Newsletter</h4>
+                <p class="subscribe-text">Get the latest updates sent right to your inbox. </p>
+            </div>
+            <div class="form-boxes">
+                <input type="text" name="name" placeholder="Full Name" required />
+                <input type="email" name="email" placeholder="Email address" required />
+                <input type="submit" value="SUBSCRIBE" />
+            </div>
+    </main>
+
+    <footer>
+        <ul class="footer-links">
+            <li><a href='home.html'>@showme.com</a></li>
+        </ul>
+        <p class="footer-text1">CFG UK</p>
+        <p class="footer-text2">© 2023 ShowMe. All Rights Reserved.</p>
+    </footer>
+
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+        function sendEmail() {
+            Email.send({
+                Host: "smtp.live.com",
+                Username: "username",
+                Password: "password",
+                To: 'them@website.com',
+                From: "you@isp.com",
+                Subject: "This is the subject",
+                Body: "And this is the body"
+            }).then(
+                message => alert(message)
+            );
+        }
+    </script>
+</body>
+
+</html>

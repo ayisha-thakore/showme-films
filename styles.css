@@ -1,0 +1,330 @@
+* { /*styles whole sheet*/
+    /*common to remove default styles*/
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color:#ffffff;
+    /*TypoGraphy, colors &fonts*/
+    font-family:'Source Sans 3', sans-serif;
+    color:rgb(37, 36, 34);
+}
+
+/* Top Nav bar */
+li,a,button {
+    /*remove hyperlinks on all text */
+    text-decoration: none;
+}
+
+nav {
+    /*display to make all items inline*/
+    display: flex;/*flex used to automatically move to horizontal*/
+    justify-content: flex-end; /*use center to space items out evenly or flex-end start to move items to left or right*/
+    align-items: center; /*centre's items*/
+    padding:20px 50px;
+    border-bottom: 5px ridge rgba(37, 36, 34,0.7);/*to add bottom border*/
+
+}
+
+.main-logo { 
+    /*to move logo left (coincides with justify-content:flex-end*/
+    margin-right: auto;
+    text-align: center;
+}
+.main-logo a {
+    /*fonts*/
+    font-weight: 700;
+    font-size: 25px;
+    letter-spacing: 0.5px; /*used to specify the space between the characters in a text*/
+    text-transform: uppercase; /*to make text uppercase*/
+    /*to make the cursor a pointer when you hover over*/
+    cursor:pointer; 
+    transition: all 0.3s ease 0s;
+}
+
+.light-font {
+    /*change '@' font style in main logo*/
+    font-weight: 200;
+    font-size: 32px;
+}
+
+.main-logo a:hover { /*creates a color when you hover over link in navbar*/
+    color:rgb(235, 94, 40)
+}
+
+.nav_links {
+    list-style-type: none; /*remove bullet points in list*/
+}
+
+.nav_links li {
+    display: inline-block; /* to make list inline side by side*/
+    /*spacing between each list item*/
+    padding:0px 20px;
+    margin: auto;
+}
+
+.nav_links li a {
+    transition: all 0.3s ease 0s;
+}
+
+.nav_links li a:hover { /*creates a color when you hover over link in navbar*/
+    color:rgb(235, 94, 40)
+}
+
+button{
+    /*spacing on 'Sign up' button*/
+    padding:9px 25px;
+    border: none;
+    border-radius: 50px;
+    margin: 0px 20px;
+    /*color of button - use alpha for opacity of button*/
+    background-color: rgba(235,94,40,1); /*use alpha 1 to make button not transparent*/
+    /*to make the cursor a pointer when you hover over*/
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+button:hover{/*creates a color when you hover over button in navbar*/
+    background-color: rgba(235,94,40,0.8); /*use alpha 0.8 to make button more transparent*/
+}
+
+/* Content */
+.clearfix-container {
+    padding: 50px;
+    margin-left: 100px;
+}
+h2 {
+    width: 349px;
+    height: 64px;
+    margin-top: 50px;
+    font-weight: 700;
+    font-size: 38px;
+    text-align: center;
+}
+.clearfix-container p{
+    width: 349px;
+    height: 104px;
+    margin-top: 20px;
+    font-size: 16px;
+    text-align: center;
+}
+.clearfix-container a{
+    width: 349px;
+    display: inline-block;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.clearfix-container input{
+        /*spacing on 'Start here' button*/
+        width: 228px;
+        height: 48px;
+        padding:9px 25px;
+        border: none;
+        border-radius: 50px;
+        /*color of button - use alpha for opacity of button*/
+        background-color: rgba(235,94,40,1); /*use alpha 1 to make button not transparent*/
+        /*to make the cursor a pointer when you hover over*/
+        cursor: pointer;
+        transition: all 0.3s ease 0s;
+    }
+    
+.clearfix-container input:hover{/*creates a color when you hover over button in navbar*/
+        background-color: rgba(235,94,40,0.8); /*use alpha 0.8 to make button more transparent*/
+    }
+
+/* YOU image styling */
+.image1 {
+    float: right; /*moves img to right in container*/
+    width: 650px;
+    height: 400px;
+    padding: 20px;
+}
+
+.clearfix-container::after { 
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/*main*/
+h3 {
+    font-weight: 700;
+    font-size: 22px;
+    padding: 0px 0px 30px 0px;
+    text-align: center;
+}
+
+.flexbox {
+    display: flex;
+    justify-content: center;
+}
+.flexbox img {
+    width: 120px;
+    height: 75px;
+    margin: 5px 20px;
+    text-align: center;
+    border: solid #ccc5b9;
+}
+
+.streaming-text {
+    font-size: 16px;
+    text-align: center;
+    margin: 25px 0px;
+    padding-bottom: 40px;
+}
+
+
+.icon-section{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: auto;
+}
+
+.icon-section li {
+    color: #252422;
+    font-size: 21px;
+}
+
+.icon-section i {
+    background-color: #eb5e28;
+    padding: 20px;
+    margin: 20px;
+    border: 2px;
+    border-radius: 5px; /*to create rounded border*/
+}
+
+.icon-section p{
+    display: flex;
+    justify-content: center;
+    text-align: left;
+    font-size: 14px;
+    inline-size: 300px;
+    overflow-wrap: break-word;
+    padding-bottom: 40px;
+    margin-left: 90px;
+    /* margin-top: 2px; */
+}
+
+/* Style the form element with a border around it */
+form {
+    border: 4px none;
+    text-align: center;
+    padding: 50px 500px;
+    margin: auto;
+  }
+
+.form-header {
+    padding: 10px;
+    margin: auto;
+}
+.subscribe-title {
+    font-size: 30px;
+    font-weight: 600;
+}
+  
+  /* Add some padding and a grey background color to containers */
+  .form-boxes {
+    padding: 20px;
+    background-color: #f1f1f1;
+  }
+  
+  /* Style the input elements and the submit button */
+  input[type=text], input[type=email], input[type=submit] {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+  
+  /* Style the submit button */
+  input[type=submit] {
+    background-color: #eb5e28;
+    border: none;
+  }
+  
+  input[type=submit]:hover {
+    opacity: 0.8;
+  }
+
+  /* footer */
+footer{
+    border-top: 5px ridge rgba(37, 36, 34,0.7);/*to add bottom border*/
+}
+
+.footer-links {
+    list-style-type: none; /*removes bullet points on list*/
+    display: flex;/*flex used to automatically move to horizontal*/
+    justify-content: center; /*use center to space items out evenly or flex-end start to move items to left or right*/
+    align-items: center; /*centre's items*/
+    padding:30px 400px;
+}
+.footer-links li {
+    display: inline-block; /* to make list inline side by side*/
+    /*spacing between each list item*/
+    padding:0px 20px;
+    margin: auto;
+}
+.footer-links li a {
+    transition: all 0.3s ease 0s;
+}
+.footer-links li a:hover { /*creates a color when you hover over link in navbar*/
+    color:rgb(235, 94, 40)
+}
+.footer-text1 {
+    display: flex;
+    justify-content: center;
+}
+.footer-text2 {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0px 20px 0px;
+}
+
+/* movies and tv shows page */
+
+.main-tv {
+    text-align: center;
+}
+
+.top5 {
+    display: contents;
+}
+
+.h5-title {
+    margin: 20px 0px 20px 0px;
+    font-size: 3em;
+}
+
+.carnival-row-img {
+    margin: 0px 0px 5px 0px;
+}
+
+.caption-text {
+    letter-spacing: 1px;
+}
+
+.shows-subheadings {
+    inline-size: auto;
+}
+
+.body-text {
+    margin: auto;
+    text-align: center;
+    max-width: 500px;
+}
+
+.streaming-options {
+    display: contents;
+    padding-bottom: 40px;
+}
+
+.streaming-title {
+    margin: 40px 0px 20px 0px;
+    font-size: 2.5em;
+    font-weight: 200;
+}
